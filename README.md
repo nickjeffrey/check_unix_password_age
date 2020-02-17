@@ -35,7 +35,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
   If you are using the check_by_ssh method, you will need a section in the services.cfg
   file on the nagios server that looks similar to the following.
   This assumes that you already have ssh key pairs configured.
-   # Define service for checking time synchronization
+   # Define service for checking password age
    define service{
            use                             generic-24x7-service
            hostgroup_name                  all_linux,all_freebsd,all_aix

@@ -17,11 +17,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  to something like "passwords must expire every 90 days", use this syntax:
     check_unix_password_age --maxage=90
 
- In case you are wondering why there is no --minage parameter to check for password minimum ages 
- (ie no changing passwords more than once per day), 
- it is because not all operating systems (looking at you *BSD) supported by this script can control the password minimum age.
-
-
+ 
 
  SUPPORTED OPERATING SYSTEMS
  ---------------------------

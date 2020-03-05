@@ -21,7 +21,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 
  SUPPORTED OPERATING SYSTEMS
  ---------------------------
-  Tested on AIX 6.1 and 7.1, IBM VIOS (based on AIX 6.1 but config file is at /home/padmin/config/ntp.conf)  
+  Tested on AIX 6.1 and 7.1, IBM VIOS   
   Tested on CentOS 7, Ubuntu 20.04, Raspbian  
   Tested on FreeBSD 12.1, OpenBSD 6.6, NetBSD 9.0  
   Not yet tested on MacOS, SunOS, HP-UX, MacOS/Darwin (patches welcome)  

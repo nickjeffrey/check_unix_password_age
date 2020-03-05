@@ -70,11 +70,11 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  ASSUMPTIONS
  -----------
   It is assumed that perl is installed on the machine running this script.
-     For RHEL / CentOS     yum install perl  
-     For Debian / Ubuntu   apt install perl  
-     For FreeBSD           pkg install perl5  
+     For RHEL / CentOS     `yum install perl`  
+     For Debian / Ubuntu   `apt install perl`  
+     For FreeBSD           `pkg install perl5`  
      For OpenBSD           (perl should already be in base install)  
-     For NetBSD            pkg_add install perl5  
+     For NetBSD            `pkg_add install perl5`  
      For AIX               (perl should already be in base install)  
 
   It is assumed that passwords do have an expiry date (ie 60 days, 90 days, etc)

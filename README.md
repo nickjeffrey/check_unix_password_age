@@ -94,15 +94,15 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
       `ln -s /usr/local/bin/perl /usr/bin/perl`
 
    This script requires root privileges to run the following commands:  
-       lsuser ; pwdadm         (AIX)  
-       cat /etc/shadow         (Linux)  
-       cat /etc/master.passwd  (FreeBSD,OpenBSD,NetBSD)  
+       `lsuser ; pwdadm`         (AIX)  
+       `cat /etc/shadow`         (Linux)  
+       `cat /etc/master.passwd`  (FreeBSD,OpenBSD,NetBSD)  
 
    Rather than give the nagios user and additional privileges, this script will run from the root crontab every 12 hours,
    generating a /tmp/nagios.check_unix_password.age.tmp file.  This file will be read by the low-privileged nagios user
-   when the check is run from nagios.
-   Ensure the root crontab has an entry similar to the following:
-   1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age >/dev/null 2>&1 #nagios helper script 
+   when the check is run from nagios.  
+   Ensure the root crontab has an entry similar to the following:  
+   `1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age >/dev/null 2>&1 #nagios helper script`
 
 
 

@@ -89,9 +89,9 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 
  TROUBLESHOOTING
  ---------------
-   The first line of this script is #!/usr/bin/perl, which is fine for most UNIX-like operating systems.  
+   The first line of this script is `#!/usr/bin/perl`, which is fine for most UNIX-like operating systems.  
    However, FreeBSD puts the perl binary at /usr/local/bin/perl, so please create a symlink on FreeBSD:  
-      ln -s /usr/local/bin/perl /usr/bin/perl
+      `ln -s /usr/local/bin/perl /usr/bin/perl`
 
    This script requires root privileges to run the following commands:  
        lsuser ; pwdadm         (AIX)  

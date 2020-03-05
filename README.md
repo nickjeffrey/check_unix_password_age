@@ -21,10 +21,10 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 
  SUPPORTED OPERATING SYSTEMS
  ---------------------------
-  Tested on AIX 6.1 and 7.1, IBM VIOS (based on AIX 6.1 but config file is at /home/padmin/config/ntp.conf)
-  Tested on CentOS 7, Ubuntu 20.04, Raspbian
-  Tested on FreeBSD 12.1, OpenBSD 6.6, NetBSD 9.0
-  Not yet tested on MacOS, SunOS, HP-UX, MacOS/Darwin (patches welcome)
+  Tested on AIX 6.1 and 7.1, IBM VIOS (based on AIX 6.1 but config file is at /home/padmin/config/ntp.conf)  
+  Tested on CentOS 7, Ubuntu 20.04, Raspbian  
+  Tested on FreeBSD 12.1, OpenBSD 6.6, NetBSD 9.0  
+  Not yet tested on MacOS, SunOS, HP-UX, MacOS/Darwin (patches welcome)  
 
 
  USAGE 
@@ -46,7 +46,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
   If you are using the check_nrpe method, you will need a section in the services.cfg
   file on the nagios server that looks similar to the following.
   This assumes that you already have ssh key pairs configured.
-   # Define service for checking time synchronization
+   \# Define service for checking time synchronization
    define service{
            use                             generic-24x7-service
            host_name                       unix11,unix12,unix13

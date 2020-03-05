@@ -14,8 +14,8 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  If your passwords are set to never expire, this script will never give you any warnings, unless you use the --maxage=## parameter.
 
  If you are not certain what the password rules are on each individual machine, but you have an overall corporate policy similar
- to something like "passwords must expire every 90 days", use this syntax:
-    check_unix_password_age --maxage=90
+ to something like "passwords must expire every 90 days", use this syntax:  
+    `check_unix_password_age --maxage=90`
 
  
 
@@ -61,7 +61,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  Schedule this script to run every 12 hours from the root crontab, which will update a file at `/tmp/nagios.check_unix_password_age.tmp`  
  When this script runs as the low-privileged nagios user, the script will read the contents of `/tmp/nagios.check_unix_password_age.tmp`  
  Create cron entries in the root user crontab similar to the following:  
-     1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age  1>/dev/null 2>/dev/null
+     `1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age  1>/dev/null 2>/dev/null`
 
 
 

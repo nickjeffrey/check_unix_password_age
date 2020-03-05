@@ -11,7 +11,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 
  This script does not make value judgements about your password policy.  
  If your max password age is set to 9999 days, this script is cool with your decision.
- If your passwords are set to never expire, this script will never give you any warnings, unless you use the --maxage=## parameter.
+ If your passwords are set to never expire, this script will never give you any warnings, unless you use the `--maxage=##` parameter.
 
  If you are not certain what the password rules are on each individual machine, but you have an overall corporate policy similar
  to something like "passwords must expire every 90 days", use this syntax:  

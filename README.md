@@ -55,7 +55,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
            }
 
   If using NRPE, you will also need a section defining the NRPE command in the /usr/local/nagios/nrpe.cfg file that looks like this:  
-     command[check_unix_password_age]=/usr/local/nagios/libexec/check_unix_password_age
+     `command[check_unix_password_age]=/usr/local/nagios/libexec/check_unix_password_age`
 
 
  Schedule this script to run every 12 hours from the root crontab, which will update a file at `/tmp/nagios.check_unix_password_age.tmp`  

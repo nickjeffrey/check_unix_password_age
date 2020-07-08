@@ -22,9 +22,8 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  SUPPORTED OPERATING SYSTEMS
  ---------------------------
   Tested on AIX 6.1 and 7.1, IBM VIOS   
-  Tested on CentOS 7, Ubuntu 20.04, Raspbian  
-  Tested on FreeBSD 12.1, OpenBSD 6.6, NetBSD 9.0  
-  Not yet tested on MacOS, SunOS, HP-UX (patches welcome)  
+  Tested on RHEL 7, CentOS 7, Ubuntu 20.04, Raspbian  
+  Not yet tested on *BSD, MacOS, SunOS, HP-UX (patches welcome)  
 
 
  USAGE 
@@ -38,7 +37,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
     
        define service{
            use                             generic-24x7-service
-           hostgroup_name                  all_linux,all_freebsd,all_aix
+           hostgroup_name                  all_linux,all_aix
            service_description             password age
            check_command                   check_by_ssh!"/usr/local/nagios/libexec/check_unix_password_age"
            }

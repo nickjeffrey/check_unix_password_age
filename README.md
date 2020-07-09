@@ -22,8 +22,8 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
  SUPPORTED OPERATING SYSTEMS
  ---------------------------
   Tested on AIX 6.1 and 7.1, IBM VIOS   
-  Tested on RHEL 7, CentOS 7, Ubuntu 20.04, Raspbian  
-  Not yet tested on *BSD, MacOS, SunOS, HP-UX (patches welcome)  
+  Tested on RHEL 7, CentOS 7, Ubuntu 20.04, Raspbian, FreeBSD, OpenBSD, NetBSD  
+  Not yet tested on MacOS, SunOS, HP-UX (patches welcome)  
 
 
  USAGE 

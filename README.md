@@ -106,3 +106,7 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 
 
 
+# Output
+```
+password age OK - no expired passwords found.   OS=Linux, user:root age:17 minage:0 maxage:60 days_left:43,
+```

@@ -110,3 +110,6 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
 ```
 password age OK - no expired passwords found.   OS=Linux, user:root age:17 minage:0 maxage:60 days_left:43,
 ```
+```
+password age WARN - Passwords are not allowed to be more than 180 days old, but oracle user password is 545 days old.  Please check the password expiry rules.   OS=Linux, user:root age:34 minage:0 maxage:99999 days_left:99998, user:oracle age:545 minage:0 maxage:99999 days_left:99454, |
+```

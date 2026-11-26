@@ -57,10 +57,10 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
      `command[check_unix_password_age]=/usr/local/nagios/libexec/check_unix_password_age`
 
 
- Schedule this script to run every 12 hours from the root crontab, which will update a file at `/tmp/nagios.check_unix_password_age.tmp`  
+ Schedule this script to run every hour from the root crontab, which will update a file at `/tmp/nagios.check_unix_password_age.tmp`  
  When this script runs as the low-privileged nagios user, the script will read the contents of `/tmp/nagios.check_unix_password_age.tmp`  
  Create cron entries in the root user crontab similar to the following:  
-     `1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age  1>/dev/null 2>/dev/null`
+     `1 * * * * /usr/local/nagios/libexec/check_unix_password_age  1>/dev/null 2>/dev/null`
 
 
 
@@ -97,11 +97,11 @@ nagios check for password age on UNIX-like operating systems (AIX, Linux, *BSD, 
        `cat /etc/shadow`         (Linux)  
        `cat /etc/master.passwd`  (FreeBSD,OpenBSD,NetBSD)  
 
-   Rather than give the nagios user and additional privileges, this script will run from the root crontab every 12 hours,
+   Rather than give the nagios user and additional privileges, this script will run from the root crontab every hour,
    generating a /tmp/nagios.check_unix_password.age.tmp file.  This file will be read by the low-privileged nagios user
    when the check is run from nagios.  
    Ensure the root crontab has an entry similar to the following:  
-   `1 1,13 * * * /usr/local/nagios/libexec/check_unix_password_age >/dev/null 2>&1 #nagios helper script`
+   `1 * * * * /usr/local/nagios/libexec/check_unix_password_age >/dev/null 2>&1 #nagios helper script`
 
 
 
